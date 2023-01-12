@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--estilos css !-->
+    <link rel="stylesheet" href="../beachPlay/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../beachPlay/assets/css/all.min.css">
+</head>
+
+<body>
+
+    <div container="container">
+        <div class="card">
+
+            <div class="card-header">
+                <div class="card-header bg-info">
+                    <h3 class="text-white">Gestionar producto</h3>
+                </div>
+            </div>
+            <!--CARD BODY !-->
+            <div class="card-body">
+
+
+                <div class="row">
+                    <div class="btn-group-sm">
+                        <button class="btn btn-outline-info" onclick="Consultar();">
+                            Consultar
+                        </button>
+                        <button class="btn btn-outline-info" onclick="Guardar();"><span class="fa fa-save"> </span>
+                            Guardar
+                        </button>
+                        <button class="btn btn-outline-info" onclick="Modificar();"><span class="fa fa-pencil"> </span>
+                            Modificar
+                        </button>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="id_producto">Nombre:</label>
+                        <input type="text" name="id_producto" id="id_producto"
+                            placeholder="ingrese id_producto del producto" autofocus class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="ingrese nombre del producto" autofocus
+                            class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="precio">Precio:</label>
+                        <input type="text" name="precio" id="precio" placeholder="ingrese precio del producto" autofocus
+                            class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="descripcion">descripcion:</label>
+                        <input type="text" name="descripcion" id="descripcion"
+                            placeholder="ingrese descripcion del producto" autofocus class="form-control">
+                    </div>
+                </div>
+
+            </div>
+            <!--CARD BODY !-->
+
+            <div class="card-footer">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>#</th>
+                            <th>id</th>
+
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>descripcion</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="datos" for="datos">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--esitlos js !-->
+<script src="../beachPlay/assets/js/all.min.js"></script>
+<script src="../beachPlay/assets/js/bootstrap.min.js"></script>
+<script src="../beachPlay/assets/js/jquery.js"></script>
+<script src="../beachPlay/assets/js/gestion/persona.js"></script>
+
+</html>
